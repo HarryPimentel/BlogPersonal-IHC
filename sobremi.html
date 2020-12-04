@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Y CSS -IHC-1050</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<style>
+    html {
+        box-sizing: border-box;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+    
+    .column {
+        float: left;
+        width: 50%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+    
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+    }
+    
+    img {
+        border: 2px solid #F8EFBA;
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+        background-color: #F79F1F;
+    }
+    
+    .mifoto {
+        filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+    }
+    
+    .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+    }
+    
+    .contenido {
+        padding: 0 16px;
+    }
+    
+    .contenido::after,
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .title {
+        color: #182C61;
+        text-align: center;
+    }
+    
+    p {
+        color: #2C3A47;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 25px;
+    }
+    
+    .descripcion {
+        color: #2C3A47;
+        text-align: justify;
+        font-size: 18px;
+        margin: 20px;
+        padding: 2px;
+    }
+    
+    .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 5%;
+    }
+    
+    button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: black;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    .button:hover {
+        background-color: #555;
+    }
+    
+    @media screen and (max-width: 650px) {
+        .column {
+            width: 100%;
+            display: block;
+        }
+        .descripcion {
+            color: #2C3A47;
+            text-align: justify;
+            font-size: 20px;
+            margin: 20px;
+            padding: 25px;
+        }
+    }
+    
+    @media screen and (max-width: 350px) {
+        .column {
+            width: 100%;
+            display: block;
+        }
+        .descripcion {
+            color: #2C3A47;
+            text-align: center;
+            font-size: 20px;
+            margin: 20px;
+            padding: 25px;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Bienveidos a mi Blog Personal IHC</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobremi.html">Sobre Mi</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+
+        <div class="clearfix">
+
+        </div>
+
+        <h2 style="text-align:center">¿Quién Soy?</h2>
+        <br>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img class="mifoto" src="img/fotoperfil.jpeg" alt="Juancito">
+                    <div class="contenido">
+                        <br>
+                        <h2>Harry Christopher Pimentel Santana</h2>
+                        <p class="title"> <strong>Estudiante Universitario</strong></p>
+
+                        <p class="title"><strong> Carrera Universitaria: Ingeniería en Sistemas</strong></p>
+                        <p class="bio">
+                            <strong>Bases de Datos</strong> (SQLy Oracle) |
+                            <strong>Redes</strong> (Cisco Packet Tracer) |<strong> Desarrollo Web </strong>(HTML, CSS Y Javascript)|<strong>Telefonía IP</strong> (PhonerLite, Virtual Box) | Jugador de Voleibol |
+                        </p>
+                        <p class="youtube">
+                            <a target="_blank" href="https://www.youtube.com/channel/UCz3x6WdMBfxKmH4nY3HMWFg?view_as=subscriber">
+                                <button>Ir al Canal de Youtube</button>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+
+                <P class="descripcion">
+                    Como estudiante universitario, me he dado cuenta de que hay que esforzarse para salir hacia delante. El estudio es muy importante para el progreso tanto individual como a nivel general (nacional e internacional). A lo largo de la carrera, he pasado por muchas situaciones buenas y malas. Estas situaciones forman parte de nuestras vidas. Aprendí que nunca es tarde para hacer las cosas y que debemos valorar el tiempo, la familia y cada momento que vivimos.
+
+
+                </p>
+
+                <P class="descripcion">
+                    Tecnología Informática (IT). Según lo definido por la Asociación de la Tecnología Informática de América (ITAA) es «el estudio, diseño, desarrollo, puesta en práctica, ayuda o gerencia de los sistemas informáticos computarizados, particularmente usos del Software y Hardware.» En fin, se ocupa del uso de computadoras y del software electrónico de convertir, de almacenar, de proteger, de procesar, de transmitir y de recuperar la información.
+
+                </p>
+                <P class="descripcion">
+                    Como sabemos, la tecnología y la ciencia son dos ámbitos diferentes entre sí, pero trabajan en estrecha armonía. Para definirlo de manera simple, podríamos decir que la ciencia es una serie de conocimientos englobados y organizados de manera sistemática y rigurosa, los cuales se obtienen a partir de la observación, experimentación y razonamiento dentro de cada área específica de aplicación.
+
+
+
+                </p>
+
+                <P class="descripcion">
+                    Así como hemos visto que sucede en distintos ámbitos que involucran a la sociedad, la informática y la tecnología desarrollada en torno a ella han tenido en las últimas décadas un impacto más que significativo en la educación, introduciendo cambios realmente positivos que permiten ampliar el rango de acción del aprendizaje diario.
+                    Entre los principales aspectos positivos que ha tenido la informática dentro de la educación en distintas partes del mundo podemos mencionar la globalización de la difusión de contenidos, ya que la informática y los desarrollos tecnológicos han permitido la creación de plataformas adecuadas para poder llevar a cabo una educación remota y a distancia.
+
+                </p>
+
+                <div class="clearfix">
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="clearfix">
+
+        </div>
+        <footer class="footer ">
+            <div style="margin: 24px 0; ">
+                <a href=" " target="_blank"><i class="fa fa-linkedin "style="font-size:48px;color:black; "></i></a>
+                <a href="https://www.youtube.com/channel/UCz3x6WdMBfxKmH4nY3HMWFg?view_as=subscriber" target="_blank"><i class="fa fa-youtube "style="font-size:48px;color:black; "></i></a>
+                <a href=" " target="_blank"><i class="fa fa-twitter "style="font-size:48px;color:black; "></i></a>
+                <a href="https://www.instagram.com/harrypimentel/" target="_blank"><i class="fa fa-instagram " style="font-size:48px;color:black; "></i></a>
+                <a href="https://www.facebook.com/harrypimentelS/" target="_blank"><i class="fa fa-facebook " style="font-size:48px;color:black; "></i></a>
+            </div>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>
